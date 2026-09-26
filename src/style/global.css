@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/src/assets/fonts/helvetica-neue/HelveticaNeueLTW0545Light.woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/src/assets/fonts/helvetica-neue/HelveticaNeueLTW0555Roman.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/src/assets/fonts/helvetica-neue/HelveticaNeueLTW0585Heavy.woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Benzin";
+  src: url("/src/assets/fonts/benzin/Benzin-Bold.woff2");
+}
+
+@theme {
+  --default-font-family: "Helvetica Neue", Prompt, Helvetica, sans-serif;
+  --spacing-nav: 3.5rem;
+}
+
+@utility h-banner-screen {
+  height: calc(100vh - var(--spacing-nav));
+}

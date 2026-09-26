@@ -1,3 +1,10 @@
+import { GlobalNavbar } from "@/features/navigation/";
+import Homepage from "@/pages/homepage";
 export default function App() {
-  return <></>;
+  return (
+    <>
+      <GlobalNavbar />
+      <Homepage />
+    </>
+  );
 }
