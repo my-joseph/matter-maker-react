@@ -14,7 +14,7 @@ export default function GlobalNavbar() {
 
   return (
     <>
-      <nav className=" w-full top-0 border-b h-nav">
+      <nav className=" sticky w-full top-0 border-b h-nav z-50 bg-white">
         <div className=" relative flex justify-between px-4 py-4 md:content-center md:grid md:grid-cols-3 h-full">
           <div className=" w-full h-full flex items-center md:justify-center">
             <a
@@ -80,57 +80,162 @@ export default function GlobalNavbar() {
               animate={{ opacity: 0.9, x: "0%" }}
               exit={{ opacity: 1, x: "-100%" }}
               transition={{
-                duration: 0.8,
+                duration: 0.5,
                 ease: "circInOut",
               }}
-              className=" absolute bottom-0 w-full h-banner-screen bg-slate-50 opacity-80 md:w-md"
+              className=" z-50 fixed bottom-0 w-full h-banner-screen bg-slate-50 opacity-80 md:w-md"
             >
               <div className=" flex justify-center p-4">
                 <ul className=" flex flex-col w-full font-secondary text-xl font-semibold">
-                  <li className=" flex items-center py-0.5">
-                    <a href="">INTRUSIVE THOUGHTS</a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      INTRUSIVE THOUGHTS
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">SILENCED LOGO </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      SILENCED LOGO{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">MM CREW </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      MM CREW{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">HAUNTED DOLL HOUSE </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      HAUNTED DOLL HOUSE{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">"HOTDOG" </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      "HOTDOG"{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">INTRUSIVE THOUGHTS</a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      INTRUSIVE THOUGHTS
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">SILENCED LOGO </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      SILENCED LOGO{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">MM CREW </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      MM CREW{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">HAUNTED DOLL HOUSE </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      HAUNTED DOLL HOUSE{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">"HOTDOG" </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      "HOTDOG"{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">INTRUSIVE THOUGHTS</a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      INTRUSIVE THOUGHTS
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">SILENCED LOGO </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      SILENCED LOGO{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">MM CREW </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      MM CREW{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">HAUNTED DOLL HOUSE </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      HAUNTED DOLL HOUSE{" "}
+                    </motion.a>
                   </li>
-                  <li className=" flex items-center py-0.5">
-                    <a href="">"HOTDOG" </a>
+                  <li className=" flex items-center w-full">
+                    <motion.a
+                      className=" py-0.5 w-full"
+                      whileHover={{ x: "2.5%", opacity: 0.7 }}
+                      transition={{ duration: 0.1, ease: "easeIn" }}
+                      href=""
+                    >
+                      "HOTDOG"{" "}
+                    </motion.a>
                   </li>
                 </ul>
               </div>

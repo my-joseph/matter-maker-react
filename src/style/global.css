@@ -34,3 +34,8 @@
 @utility h-banner-screen {
   height: calc(100vh - var(--spacing-nav));
 }
+
+.swiper-slide {
+  width: fit-content !important;
+  height: auto;
+}
