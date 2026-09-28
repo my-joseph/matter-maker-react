@@ -46,7 +46,7 @@ export default function ShelfCollection({ slug, banner, products }) {
             mousewheel={{ forceToAxis: true }}
           >
             {products.map((product) => (
-              <SwiperSlide className=" min-w-fit h-fit">
+              <SwiperSlide>
                 <ShelfCard key={product.id} {...product}></ShelfCard>
               </SwiperSlide>
             ))}

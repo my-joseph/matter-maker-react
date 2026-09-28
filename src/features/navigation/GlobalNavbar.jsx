@@ -2,6 +2,7 @@ import { Handbag, Heart, Menu, Search, User, X } from "lucide-react";
 import { useState } from "react";
 import IconWrapper from "@/components/ui/IconWrapper";
 import { motion, AnimatePresence } from "motion/react";
+import { Link } from "react-router-dom";
 
 export default function GlobalNavbar() {
   const [navOpen, setNavOpen] = useState(false);
@@ -17,8 +18,8 @@ export default function GlobalNavbar() {
       <nav className=" sticky w-full top-0 border-b h-nav z-50 bg-white">
         <div className=" relative flex justify-between px-4 py-4 md:content-center md:grid md:grid-cols-3 h-full">
           <div className=" w-full h-full flex items-center md:justify-center">
-            <a
-              href="/index.html"
+            <Link
+              to={"/"}
               className=" grid place-items-center w-62.5 h-6 overflow-hidden shrink-0"
             >
               <img
@@ -26,7 +27,7 @@ export default function GlobalNavbar() {
                 alt=""
                 className=" w-full h-full object-contain object-center"
               />
-            </a>
+            </Link>
           </div>
           <div className=" flex justify-end items-center md:order-first md:justify-start">
             <button
