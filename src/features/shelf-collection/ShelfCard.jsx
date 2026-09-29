@@ -2,7 +2,6 @@ import IconWrapper from "@/components/ui/IconWrapper";
 import { Heart } from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-
 export default function ShelfCard({ name, basePrice, images = {}, id }) {
   return (
     <>

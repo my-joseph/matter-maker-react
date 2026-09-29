@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, FreeMode } from "swiper/modules";
 import IconWrapper from "@/components/ui/IconWrapper";
 import { Heart, Plus, Share } from "lucide-react";
+import { useCart } from "@/features/cart/context/CartContext";
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -21,11 +22,14 @@ export default function ProductDetail() {
     setProduct(foundProduct);
   }, [id]);
 
+  const { addToCart } = useCart();
+
   if (!product) {
     return <h1>Loading...</h1>;
   }
 
   const { name, basePrice, images = [] } = product;
+
   return (
     <>
       <div className=" min-h-screen">
@@ -100,8 +104,9 @@ export default function ProductDetail() {
             </div>
             <div className=" fixed bottom-0 left-0 right-0 z-20 flex justify-center items-center w-full p-4 md:p-0 md:static ">
               <button
-                className=" flex justify-center items-center px-8 py-3 w-full bg-slate-50 border"
-                type="submit"
+                onClick={() => addToCart(id)}
+                className=" flex justify-center items-center px-8 py-3 w-full bg-slate-50 border cursor-pointer"
+                type="button"
               >
                 ADD TO CART
               </button>
